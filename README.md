@@ -1,20 +1,34 @@
-# SKELETON - Module template
-
-[English](README.md) | [Español](README_ES.md)
-
-
-## How to create your own module
-
-1. Use the script `create_module.sh` located in [`modules/`](https://github.com/azerothcore/azerothcore-wotlk/tree/master/modules) to start quickly with all the files you need and your git repo configured correctly (heavily recommended).
-1. You can then use these scripts to start your project: https://github.com/azerothcore/azerothcore-boilerplates
-1. Do not hesitate to compare with some of our newer/bigger/famous modules.
-1. Edit the `README.md` and other files (`include.sh` etc...) to fit your module. Note: the README is automatically created from `README_example.md` when you use the script `create_module.sh`.
-1. Publish your module to our [catalogue](https://github.com/azerothcore/modules-catalogue).
+# ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
+## mod-skip-dk
+- Latest build status with azerothcore: [![Build Status](https://github.com/Crypticaz/SkipDeathKnightStartingArea/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/Crypticaz/SkipDeathKnightStartingArea)
 
 
-## How to test your module?
+## Description
 
-Disable PCH (precompiled headers) and try to compile. To disable PCH, set `-DNOPCH=1` with Cmake (more info [here](http://www.azerothcore.org/wiki/CMake-options)).
+- Skips the Death Knight starting zone, for those who want to make a Death Knight without having to go through the starting area.
 
-If you forgot some headers, it is time to add them!
+## How to use ingame
 
+1. Enable in conf
+2. Go into conf and set any features you want to enable or modify
+3. Make a Death Knight and login.
+
+## Requirements
+
+- AzerothCore v3.0.0
+
+## Installation
+
+```
+1) Simply place the module under the `modules` directory of your AzerothCore source. 
+3) Re-run cmake and launch a clean build of AzerothCore.
+```
+
+## Edit module configuration (optional)
+
+If you need to change the module configuration, go to your server configuration folder (where your worldserver or worldserver.exe is), copy SkipDKModule.conf.dist to SkipDKModule.conf and edit that new file.
+
+### Credits ###
+------------------------------------------------------------------------------------------------------------------
+- [acidmanifesto](https://github.com/acidmanifesto/TC-Custom-Scripts/tree/main/335%20TC/Official%20Trinitycore%20Custom%20Scripts/Official%20Merged/Skip%20Death%20Knight%20Starter%20Area%20Module)
+- AzerothCore: [repository](https://github.com/azerothcore) - [website](http://azerothcore.org/) - [discord chat community](https://discord.gg/PaqQRkd)
